@@ -1,3 +1,19 @@
 .item {
     border: 2px solid white;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pizza-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza-upper {
+    display: flex;
+    flex-direction: row;
+}
+
