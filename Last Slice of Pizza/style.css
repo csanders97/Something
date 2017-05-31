@@ -2,7 +2,33 @@
     border: 2px solid black;
 }
 
+.logo {
+    flex: .2;
+} 
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    flex: .6;
+    text-align: center;
+}
+
+.price {
+    flex: .2;
+}
+
 .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content {
     display: flex;
     flex-direction: row;
 }
@@ -10,6 +36,7 @@
 .pizza-content {
     display: flex;
     flex-direction: column;
+    flex: .8;
 }
 
 .pizza-upper {
@@ -17,3 +44,20 @@
     flex-direction: row;
 }
 
+.pizza-image {
+    padding: 10px;
+    margin: 10px;
+    flex: .4;
+}
+
+.pizza-options {
+    padding: 20px;
+    margin: 0 auto;
+    flex: .6;
+}
+
+.summary-content {
+    display: flex;
+    flex-direction: column;
+    flex: .2;
+}
