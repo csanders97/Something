@@ -42,6 +42,7 @@
 .pizza-upper {
     display: flex;
     flex-direction: row;
+    height: 200px;
 }
 
 .pizza-image {
@@ -56,8 +57,22 @@
     flex: .6;
 }
 
+.pizza-lower {
+    height: 200px;
+}
+
 .summary-content {
     display: flex;
     flex-direction: column;
     flex: .2;
+}
+
+.order-summary {
+    text-align: center;
+    height: 325px;
+}
+
+.order-submit {
+    padding: 10px;
+    margin: 10px;
 }
