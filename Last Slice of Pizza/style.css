@@ -42,7 +42,7 @@
 .pizza-upper {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 300px;
 }
 
 .pizza-image {
@@ -58,7 +58,7 @@
 }
 
 .pizza-lower {
-    height: 200px;
+    height: 300px;
 }
 
 .summary-content {
@@ -69,10 +69,29 @@
 
 .order-summary {
     text-align: center;
-    height: 325px;
+    height: 500px;
 }
 
 .order-submit {
     padding: 10px;
     margin: 10px;
+}
+
+@media all and (max-width: 750px) {
+    .container {
+        width: 100%;
+    }
+
+    .pizza-upper {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 575px) {
+    html {
+        min-width: 500px;
+    }
+    .title {
+        font-size: 13px;
+    }
 }
