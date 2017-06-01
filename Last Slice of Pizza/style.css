@@ -3,7 +3,7 @@
 }
 
 .logo {
-    flex: .2;
+    flex: .1;
 } 
 
 .title {
@@ -13,7 +13,7 @@
 }
 
 .price {
-    flex: .2;
+    flex: .3;
 }
 
 .container {
@@ -91,6 +91,7 @@
     html {
         min-width: 500px;
     }
+    
     .title {
         font-size: 13px;
     }
