@@ -3,8 +3,9 @@
     <head>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+        <title>Build your own Pizza!</title>
     </head>
-    <body>
+    <body ng-app="createPizza" ng-controller="mainController">
         <div class="container item">
             <div class="header item">
                 <div class="logo item">
@@ -41,7 +42,7 @@
                     </div>
                     <div class="pizza-lower item">
                         <div class="pizza-toppings item">
-                            
+                            <button type="button" class="pizzaTopping" ng-repeat="topping in pizza.availToppings">{{topping.name}}</button>
                         </div>
                     </div>
                 </div>
@@ -55,6 +56,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
