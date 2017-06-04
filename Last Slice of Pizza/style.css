@@ -126,3 +126,19 @@ h1, h2, h3, p {
         font-size: 13px;
     }
 }
+
+.pizzaTopping{
+    text-align: center;
+    padding: 15px;
+    background-color: #ccc;
+    color: black;
+    border-radius: 15px;
+}
+
+.AddOrder{
+    text-align: center;
+    padding: 15px;
+    background-color: #ccc;
+    color: black;
+    border-radius: 15px;
+}
