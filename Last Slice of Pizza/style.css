@@ -1,4 +1,4 @@
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -17,8 +17,9 @@ h1, h2, h3, p {
 }
 
 .pizza {
-    max-width: 100%;
+    max-width: 55%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .price {
@@ -60,6 +61,7 @@ h1, h2, h3, p {
     padding: 10px;
     margin: 10px;
     flex: .4;
+    text-align: center;
 }
 
 .pizza-options {
@@ -106,18 +108,27 @@ h1, h2, h3, p {
     margin: 10px;
 }
 
+@media all and (max-width: 1000px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .order-summary {
+        height: 200px;
+    }
+}
+
 @media all and (max-width: 750px) {
     .container {
         width: 100%;
     }
 
+    /*.pizza {
+        max-width: 100%;
+    }*/
+
     .pizza-upper {
         flex-direction: column;
         height: 500px;
-    }
-
-    .pizza {
-        
     }
 }
 
@@ -128,6 +139,10 @@ h1, h2, h3, p {
     
     .title {
         font-size: 13px;
+    }
+
+    .pizza-upper {
+        height: 500px;
     }
 }
 

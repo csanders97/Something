@@ -57,7 +57,13 @@
                 </div>
                 <div class="summary-content item">
                     <div class="order-summary item">
-                        Order summaries
+                        <h2>Order Summaries</h2>
+                        <table>
+                            <tr>
+                                <td ng-repeat="size in sizes"><h4>{{size.size}} Pizza:</h4></td>
+                                <td ng-repeat="price in price"><h4>${{price.cost}}</h4></td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="order-submit item">
                         <button class="addOrder">Add to Order</button>
