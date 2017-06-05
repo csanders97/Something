@@ -115,10 +115,6 @@ h1, h2, h3, p {
         flex-direction: column;
         height: 500px;
     }
-
-    .pizza {
-        
-    }
 }
 
 @media all and (max-width: 575px) {
