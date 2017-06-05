@@ -17,8 +17,9 @@ h1, h2, h3, p {
 }
 
 .pizza {
-    max-width: 100%;
+    max-width: 55%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .price {
@@ -60,6 +61,7 @@ h1, h2, h3, p {
     padding: 10px;
     margin: 10px;
     flex: .4;
+    text-align: center;
 }
 
 .pizza-options {
