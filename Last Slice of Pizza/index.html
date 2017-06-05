@@ -27,23 +27,31 @@
                         <div class="pizza-options item">
                             <div class="size-option item">
                                 <h3>Pizza Sizes:</h3>
-                                <input type="radio" class="size">
+                                <input type="radio" class="size" name="size" id="small">Small
                                 <br />
-                                <input type="radio" class="size">
+                                <input type="radio" class="size" name="size" id="medium">Medium
                                 <br />
-                                <input type="radio" class="size">
+                                <input type="radio" class="size" name="size" id="large">Large
                                 <br />
-                                <input type="radio" class="size">
+                                <input type="radio" class="size" name="size" id="X-Large">X-Large
                             </div>
                             <div class="premade-option item">
                                 <h3>Premade Pizza:</h3>
-                                <input type="radio" class="premade"/>
+                                <input type="radio" class="premade" name="premade" id="pepp">Pepperoni
+                                <br />
+                                <input type="radio" class="premade" name="premade" id="hawaii">Hawaiian
+                                <br />
+                                <input type="radio" class="premade" name="premade" id="meat">Meat Lovers
+                                <br />
+                                <input type="radio" class="premade" name="premade" id="peppAndSaus">Pepperoni + Sausage
+                                <br />
+                                <input type="radio" class="premade" name="premade" id="p.p.j">P.P.J
                             </div>
                         </div>
                     </div>
                     <div class="pizza-lower item">
                         <div class="pizza-toppings item">
-                            <button type="button" class="pizzaTopping" ng-repeat="topping in pizza.availToppings">{{topping.name}}</button>
+                            <button type="button" class="pizzaTopping item" ng-repeat="topping in pizza.availToppings">{{topping.name}}</button>
                         </div>
                     </div>
                 </div>
@@ -52,7 +60,7 @@
                         Order summaries
                     </div>
                     <div class="order-submit item">
-                        <button class="AddOrder">Add to Order</button>
+                        <button class="addOrder">Add to Order</button>
                     </div>
                 </div>
             </div>

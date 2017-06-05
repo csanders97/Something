@@ -23,6 +23,8 @@ h1, h2, h3, p {
 
 .price {
     flex: .3;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .container {
@@ -83,7 +85,9 @@ h1, h2, h3, p {
 }
 
 .pizza-lower {
-    height: 300px;
+    column-count: 4;
+    column-gap: 40px;
+    padding: 40px;
 }
 
 .summary-content {
@@ -135,7 +139,7 @@ h1, h2, h3, p {
     border-radius: 15px;
 }
 
-.AddOrder{
+.addOrder{
     text-align: center;
     padding: 15px;
     background-color: #ccc;
