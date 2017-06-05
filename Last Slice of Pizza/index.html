@@ -59,8 +59,9 @@
                     <div class="order-summary item">
                         <h2>Order Summaries</h2>
                         <table>
-                            <tr ng-repeat="pizza in intrArray">
-                                <td>{{pizza.size}}</td>
+                            <tr>
+                                <td ng-repeat="size in sizes"><h4>{{size.size}} Pizza:</h4></td>
+                                <td ng-repeat="price in price"><h4>${{price.cost}}</h4></td>
                             </tr>
                         </table>
                     </div>

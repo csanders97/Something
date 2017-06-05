@@ -5,6 +5,10 @@ app.controller('mainController', function($scope) {
     $scope.sizes = [];
     $scope.price = [];
     $scope.addSize = function () {
+        if ($scope.sizes.length != 0) {
+            $scope.sizes.pop();
+            $scope.price.pop();
+        }
         $scope.sizes.push({
             size: $scope.pizzaSize
         });
@@ -30,19 +34,19 @@ app.controller('mainController', function($scope) {
             cost: $scope.cost
         });
 
-        $scope.intrArr = mapSizeAndPrice();
+        // $scope.intrArr = mapSizeAndPrice();
 
-        function mapSizeAndPrice() {
-            var map = [];
-            for (var i = 0; i < $scope.sizes.length; i++) {
-                map.push({
-                    'size': $scope.sizes[i],
-                    'price': $scope.price[i]
-                });
-            }
-            return map;
-        }
-        
+        // function mapSizeAndPrice() {
+        //     var map = [];
+        //     for (var i = 0; i < $scope.sizes.length; i++) {
+        //         map.push({
+        //             'size': $scope.sizes[i],
+        //             'price': $scope.price[i]
+        //         });
+        //     }
+        //     return map;
+        // }
+
     };
 
     $scope.pizza = {
