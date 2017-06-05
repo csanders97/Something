@@ -29,7 +29,20 @@ app.controller('mainController', function($scope) {
         $scope.price.push({
             cost: $scope.cost
         });
+
         $scope.intrArr = mapSizeAndPrice();
+
+        function mapSizeAndPrice() {
+            var map = [];
+            for (var i = 0; i < $scope.sizes.length; i++) {
+                map.push({
+                    'size': $scope.sizes[i],
+                    'price': $scope.price[i]
+                });
+            }
+            return map;
+        }
+        
     };
 
     $scope.pizza = {
@@ -47,14 +60,3 @@ app.controller('mainController', function($scope) {
         ]
     }
 });
-
-function mapSizeAndPrice() {
-    var map = [];
-    for (var i = 0; i < $scope.sizes.length; i++) {
-        map.push({
-            'size': $scope.sizes[i],
-            'price': $scope.price[i]
-        });
-    }
-    return map;
-}
