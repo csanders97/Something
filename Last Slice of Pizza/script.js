@@ -49,6 +49,14 @@ app.controller('mainController', function($scope) {
 
     };
 
+    $scope.getTotalPrice = function() {
+        var toal = 0;
+        for (var i = 0; i < $scope.price.length; i++) {
+            total += $scope.price[i];
+        }
+        return total;
+    }
+
     $scope.pizza = {
         availToppings: [
             {name: "Pepperoni", images: ["images/pepperoniLeft.png", "images/pepperoniRight.png"]},
