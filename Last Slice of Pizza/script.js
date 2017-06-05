@@ -1,6 +1,35 @@
 var app = angular.module("createPizza", []);
 
-app.controller('mainController', function($scope){
+app.controller('mainController', function($scope) {
+    $scope.cost = "";
+    $scope.size = [];
+    $scope.price = [];
+    $scope.addSize = function () {
+        $scope.size.push({
+            size: $scope.pizzaSize
+        });
+
+        if ($scope.pizzaSize == "Small") {
+            $scope.cost = 5;
+            console.log($scope.cost);
+        }
+        else if ($scope.pizzaSize == "Medium") {
+            $scope.cost = 10;
+            console.log($scope.cost);
+        }
+        else if ($scope.pizzaSize == "Large") {
+            $scope.cost = 15;
+            console.log($scope.cost);
+        }
+        else if ($scope.pizzaSize == "X-Large") {
+            $scope.cost = 20;
+            console.log($scope.cost);
+        }
+
+        $scope.price.push({
+            cost: $scope.cost
+        });
+    };
     $scope.pizza = {
         availToppings: [
             {name: "Pepperoni", images: ["images/pepperoniLeft.png", "images/pepperoniRight.png"]},

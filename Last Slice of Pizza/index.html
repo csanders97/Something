@@ -27,13 +27,13 @@
                         <div class="pizza-options item">
                             <div class="size-option item">
                                 <h3>Pizza Sizes:</h3>
-                                <input type="radio" class="size" name="size" id="small">Small
+                                <input type="radio" class="size" value="Small" id="small" ng-model="pizzaSize" ng-click="addSize()">Small
                                 <br />
-                                <input type="radio" class="size" name="size" id="medium">Medium
+                                <input type="radio" class="size" value="Medium" id="medium" ng-model="pizzaSize" ng-click="addSize()">Medium
                                 <br />
-                                <input type="radio" class="size" name="size" id="large">Large
+                                <input type="radio" class="size" value="Large" id="large" ng-model="pizzaSize" ng-click="addSize()">Large
                                 <br />
-                                <input type="radio" class="size" name="size" id="X-Large">X-Large
+                                <input type="radio" class="size" value="X-Large" id="X-Large" ng-model="pizzaSize" ng-click="addSize()">X-Large
                             </div>
                             <div class="premade-option item">
                                 <h3>Premade Pizza:</h3>
