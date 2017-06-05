@@ -21,7 +21,7 @@
             <div class="main-content item">
                 <div class="pizza-content item">
                     <div class="pizza-upper item">
-                        <div class="pizza-image item">
+                        <div class="pizza-image item" id="pizza-image">
                             <img class="pizza" src="images/blank.png"/>
                         </div>
                         <div class="pizza-options item">
@@ -51,7 +51,7 @@
                     </div>
                     <div class="pizza-lower item">
                         <div class="pizza-toppings item">
-                            <button type="button" class="pizzaTopping item" ng-repeat="topping in pizza.availToppings">{{topping.name}}</button>
+                            <button type="button" class="pizzaTopping item" ng-repeat="topping in pizza.availToppings" ng-click="addTopping(topping)" id="{{topping.name}}">{{topping.name}}</button>
                         </div>
                     </div>
                 </div>
