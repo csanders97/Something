@@ -71,4 +71,13 @@ app.controller('mainController', function($scope) {
             {name: "Mushrooms", images: ["images/mushroomLeft.png", "images/mushroomRight.png"]}
         ]
     }
+
+    $scope.addTopping = function(evt) {
+        console.log(evt);
+        var pizza = document.getElementById('pizza-image');
+        var topping = '<img class="topping" src="' + evt.images[0] + '">';
+        topping += '<img class="topping" src="' + evt.images[1] + '">';
+        pizza.innerHTML += topping;
+            
+    }
 });
