@@ -108,10 +108,23 @@ h1, h2, h3, h4, p {
     margin: 10px;
 }
 
+@media all and (max-width: 1000px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .order-summary {
+        height: 200px;
+    }
+}
+
 @media all and (max-width: 750px) {
     .container {
         width: 100%;
     }
+
+    /*.pizza {
+        max-width: 100%;
+    }*/
 
     .pizza-upper {
         flex-direction: column;
@@ -126,6 +139,10 @@ h1, h2, h3, h4, p {
     
     .title {
         font-size: 13px;
+    }
+
+    .pizza-upper {
+        height: 500px;
     }
 }
 
