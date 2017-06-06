@@ -7,6 +7,7 @@ app.controller('mainController', function($scope) {
     $scope.price = [];
     $scope.toppings = [];
     $scope.toppingCost = [];
+    $scope.fullTop = [];
     $scope.addSize = function () {
         if ($scope.sizes.length != 0) {
             $scope.sizes.pop();
@@ -64,13 +65,9 @@ app.controller('mainController', function($scope) {
     }
 
     $scope.addTopping = function(evt) {
-        console.log(evt);
-        var pizza = document.getElementById('pizza-image');
-        var topping = '<img class="topping" src="' + evt.images[0] + '">';
-        topping += '<img class="topping" src="' + evt.images[1] + '">';
-        pizza.innerHTML += topping;        
+        console.log(evt.name);
         $scope.toppings.push({
-            topping: $scope.pizzaToppings
+            topping: evt.name
         });
         if ($scope.toppings.length == 1) {
             $scope.tCost = 0;
@@ -82,5 +79,16 @@ app.controller('mainController', function($scope) {
         $scope.toppingCost.push({
             cost: $scope.tCost
         });
+        $scope.fullTop = $scope.toppings.map(function(value, index) {
+            return {
+                topping: value,
+                cost: $scope.toppingCost[index]
+            }
+        });
+        console.log(evt);
+        var pizza = document.getElementById('pizza-image');
+        var topping = '<img class="topping" src="' + evt.images[0] + '">';
+        topping += '<img class="topping" src="' + evt.images[1] + '">';
+        pizza.innerHTML += topping;        
     }
 });
