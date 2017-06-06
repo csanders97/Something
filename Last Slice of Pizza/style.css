@@ -2,6 +2,10 @@ h1, h2, h3, h4, p {
     font-family: 'Quicksand', sans-serif;
 }
 
+html{
+    background-image: url("..\\images\\woodBackground.jpg");
+}
+
 .item {
     border: 2px solid black;
 }
@@ -38,11 +42,15 @@ h1, h2, h3, h4, p {
 .header {
     display: flex;
     flex-direction: row;
+    background-color: #e31837;
+    opacity: 0.8;
 }
 
 .main-content {
     display: flex;
     flex-direction: row;
+    background-color: white;
+    opacity: 0.8;
 }
 
 .pizza-content {
@@ -55,6 +63,8 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: row;
     height: 300px;
+    background-color: #006491;
+    opacity: 0.8;
 }
 
 .pizza-image {
@@ -84,28 +94,37 @@ h1, h2, h3, h4, p {
     padding: 20px;
     margin: 5px;
     flex: .5;
+    
 }
 
 .pizza-lower {
     column-count: 4;
     column-gap: 40px;
     padding: 40px;
+    background-color: #e31837;
+    opacity: 0.8;
 }
 
 .summary-content {
     display: flex;
     flex-direction: column;
     flex: .2;
+    background-color: white;
+    opacity: 0.8;
 }
 
 .order-summary {
     text-align: center;
     height: 500px;
+    background-color: white;
+    opacity: 0.8;
 }
 
 .order-submit {
     padding: 10px;
     margin: 10px;
+    background-color: #e31837;
+    opacity: 0.8;
 }
 
 @media all and (max-width: 1000px) {
