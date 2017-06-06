@@ -3,7 +3,7 @@ h1, h2, h3, h4, p {
 }
 
 html{
-    background-image: url("..\\images\\woodBackground.jpg");
+    background-image: url("images/woodBackground.jpg");
 }
 
 .item {
@@ -103,6 +103,7 @@ html{
     padding: 40px;
     background-color: #e31837;
     opacity: 0.8;
+    height: 210px;
 }
 
 .summary-content {
@@ -131,6 +132,13 @@ html{
     .main-content {
         flex-direction: column;
     }
+
+    .pizza {
+        max-width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .order-summary {
         height: 200px;
     }
@@ -141,9 +149,11 @@ html{
         width: 100%;
     }
 
-    /*.pizza {
-        max-width: 100%;
-    }*/
+    .pizza {
+        max-width: 40%;
+        margin: 0 auto;
+        text-align: center;
+    }
 
     .pizza-upper {
         flex-direction: column;
@@ -160,7 +170,17 @@ html{
         font-size: 13px;
     }
 
+    .pizza {
+        max-width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .pizza-upper {
+        height: 500px;
+    }
+
+    .pizza-options {
         height: 500px;
     }
 }
@@ -171,6 +191,7 @@ html{
     background-color: #ccc;
     color: black;
     border-radius: 15px;
+    width: 100%;
 }
 
 .addOrder{

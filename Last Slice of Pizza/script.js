@@ -1,7 +1,6 @@
 var app = angular.module("createPizza", []);
 
 app.controller('mainController', function($scope) {
-    $scope.total = 0;
     $scope.cost = "";
     $scope.sizes = [];
     $scope.price = [];
@@ -35,24 +34,11 @@ app.controller('mainController', function($scope) {
             cost: $scope.cost
         });
 
-        $scope.pricing = getTotalPrice();
-
-        // $scope.intrArr = mapSizeAndPrice();
-
-        // function mapSizeAndPrice() {
-        //     var map = [];
-        //     for (var i = 0; i < $scope.sizes.length; i++) {
-        //         map.push({
-        //             'size': $scope.sizes[i],
-        //             'price': $scope.price[i]
-        //         });
-        //     }
-        //     return map;
-        // }
-
+        $scope.pricing = $scope.getTotalPrice();
     };
 
-    function getTotalPrice() {
+    $scope.getTotalPrice = function() {
+        $scope.total = 0;
         for (var i = 0; i < $scope.price.length; i++) {
             $scope.total += $scope.price[i];
         }
