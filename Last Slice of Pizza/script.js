@@ -2,8 +2,11 @@ var app = angular.module("createPizza", []);
 
 app.controller('mainController', function($scope) {
     $scope.cost = "";
+    $scope.tCost = "";
     $scope.sizes = [];
     $scope.price = [];
+    $scope.toppings = [];
+    $scope.toppingCost = [];
     $scope.addSize = function () {
         if ($scope.sizes.length != 0) {
             $scope.sizes.pop();
@@ -63,6 +66,7 @@ app.controller('mainController', function($scope) {
     $scope.addTopping = function(evt) {
         console.log(evt);
         var pizza = document.getElementById('pizza-image');
+<<<<<<< HEAD
         var toppingLeft = '<img class="toppingLeft" src="' + evt.images[0] + '">';
         var toppingRight = '<img class="toppingRight" src="' + evt.images[1] + '">';
         toppingLeft += '<img class="toppingLeft" src="' + evt.images[0] + '">';
@@ -70,5 +74,23 @@ app.controller('mainController', function($scope) {
         pizza.innerHTML += toppingLeft;
         pizza.innerHTML += toppingRight;
             
+=======
+        var topping = '<img class="topping" src="' + evt.images[0] + '">';
+        topping += '<img class="topping" src="' + evt.images[1] + '">';
+        pizza.innerHTML += topping;        
+        $scope.toppings.push({
+            topping: $scope.pizzaToppings
+        });
+        if ($scope.toppings.length == 1) {
+            $scope.tCost = 0;
+            console.log($scope.tCost);
+        }
+        else {
+            $scope.tCost = 1;
+        }
+        $scope.toppingCost.push({
+            cost: $scope.tCost
+        });
+>>>>>>> origin/master
     }
 });

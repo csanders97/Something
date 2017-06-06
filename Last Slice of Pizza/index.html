@@ -50,8 +50,13 @@
                         </div>
                     </div>
                     <div class="pizza-lower item">
+<<<<<<< HEAD
                         <div class="pizza-toppings">
                             <button type="button" class="pizzaTopping item" ng-model="pizzaToppings" ng-repeat="topping in pizza.availToppings" ng-click="addTopping(topping)" id="{{topping.name}}">{{topping.name}}</button>
+=======
+                        <div class="pizza-toppings item">
+                            <button type="button" class="pizzaTopping item" ng-model="pizzaToppings" ng-repeat="topping in pizza.availToppings" ng-click="addTopping(topping)" value="{{topping.name}}" id="{{topping.name}}">{{topping.name}}</button>
+>>>>>>> origin/master
                         </div>
                     </div>
                 </div>
@@ -62,6 +67,10 @@
                             <tr>
                                 <td ng-repeat="size in sizes"><h4>{{size.size}} Pizza:</h4></td>
                                 <td ng-repeat="price in price"><h4>${{price.cost}}</h4></td>
+                            </tr>
+                            <tr>
+                                <td ng-repeat="topping in toppings"><h4>{{topping.topping}}:</h4></td>
+                                <td ng-repeat="price in toppingCost"><h4>${{price.cost}}</h4></td>
                             </tr>
                         </table>
                     </div>
