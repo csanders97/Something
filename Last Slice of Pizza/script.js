@@ -66,7 +66,6 @@ app.controller('mainController', function($scope) {
     $scope.addTopping = function(evt) {
         console.log(evt);
         var pizza = document.getElementById('pizza-image');
-<<<<<<< HEAD
         var toppingLeft = '<img class="toppingLeft" src="' + evt.images[0] + '">';
         var toppingRight = '<img class="toppingRight" src="' + evt.images[1] + '">';
         toppingLeft += '<img class="toppingLeft" src="' + evt.images[0] + '">';
@@ -74,7 +73,7 @@ app.controller('mainController', function($scope) {
         pizza.innerHTML += toppingLeft;
         pizza.innerHTML += toppingRight;
             
-=======
+
         var topping = '<img class="topping" src="' + evt.images[0] + '">';
         topping += '<img class="topping" src="' + evt.images[1] + '">';
         pizza.innerHTML += topping;        
@@ -91,6 +90,5 @@ app.controller('mainController', function($scope) {
         $scope.toppingCost.push({
             cost: $scope.tCost
         });
->>>>>>> origin/master
     }
 });
