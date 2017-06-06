@@ -65,12 +65,9 @@ app.controller('mainController', function($scope) {
     }
 
     $scope.addTopping = function(evt) {
-<<<<<<< HEAD
         console.log(evt.name);
-=======
         console.log(evt);
         var pizza = document.getElementById('pizza-image');
-<<<<<<< HEAD
         var toppingLeft = '<img class="toppingLeft" src="' + evt.images[0] + '">';
         var toppingRight = '<img class="toppingRight" src="' + evt.images[1] + '">';
         toppingLeft += '<img class="toppingLeft" src="' + evt.images[0] + '">';
@@ -78,11 +75,9 @@ app.controller('mainController', function($scope) {
         pizza.innerHTML += toppingLeft;
         pizza.innerHTML += toppingRight;
             
-=======
         var topping = '<img class="topping" src="' + evt.images[0] + '">';
         topping += '<img class="topping" src="' + evt.images[1] + '">';
         pizza.innerHTML += topping;        
->>>>>>> 50129e0254e49e68e9533a0825bc9104d38ceaba
         $scope.toppings.push({
             topping: evt.name
         });
@@ -96,7 +91,6 @@ app.controller('mainController', function($scope) {
         $scope.toppingCost.push({
             cost: $scope.tCost
         });
-<<<<<<< HEAD
         $scope.fullTop = $scope.toppings.map(function(value, index) {
             return {
                 topping: value,
