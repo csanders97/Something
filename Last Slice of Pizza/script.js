@@ -74,7 +74,6 @@ app.controller('mainController', function($scope) {
         toppingRight += '<img class="toppingRight" src="' + evt.images[1] + '">';
         pizza.innerHTML += toppingLeft;
         pizza.innerHTML += toppingRight;
-            
         var topping = '<img class="topping" src="' + evt.images[0] + '">';
         topping += '<img class="topping" src="' + evt.images[1] + '">';
         pizza.innerHTML += topping;        
