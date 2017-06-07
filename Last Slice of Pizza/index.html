@@ -59,13 +59,13 @@
                     <div class="order-summary item">
                         <h2>Order Summaries</h2>
                         <table>
-                            <tr>
+                            <tr class="sizeSummary">
                                 <td ng-repeat="size in sizes"><h4>{{size.size}} Pizza:</h4></td>
                                 <td ng-repeat="price in price"><h4>${{price.cost}}</h4></td>
                             </tr>
-                            <tr ng-repeat="topping in fullTop">
-                                <td><h4>{{topping.topping}}:</h4></td>
-                                <td><h4>${{topping.cost}}</h4></td>
+                            <tr class="toppingSummary" ng-repeat="topping in fullTop">
+                                <td><h5>{{topping.topping.topping}}:</h5></td>
+                                <td><h5>${{topping.cost.cost}}</h5></td>
                             </tr>
                         </table>
                     </div>
